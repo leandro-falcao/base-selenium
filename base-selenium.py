@@ -1,5 +1,5 @@
 # by leandro falcao, libs using selenium and webdriver_manager, for update webdrives real time 
-# usei o a biblioteca selenium e webdriver_manager, para atualização do webdriver, de qualquer navegador
+# usei o a biblioteca selenium e webdriver_manager, para atualização do webdriver, de qualquer navegador. base selenium 4 em diante..
 # for install lib, with command line: pip install selenium; pip install webdriver_manager
 # para instalar o selenium e webdriver_manager use o comando: pip install selenium; pip install selenium webdriver_manager
 #
