@@ -10,7 +10,7 @@
 
 import time as tempo
 
-def baseSelenium():
+def baseSelenium(url):
   # será importado o webdrive do selenium
   from selenium import webdriver
 
