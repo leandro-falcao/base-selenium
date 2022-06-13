@@ -8,20 +8,28 @@
 #
 #
 
-# será importado o webdrive do selenium
-from selenium import webdriver
+import time as tempo
 
-#será importado o webdriver_manager, qua atualizara os nossos webdrivers
-from webdriver_manager.chrome import ChromeDriverManager
+def baseSelenium():
+  # será importado o webdrive do selenium
+  from selenium import webdriver
 
-#importar um serviço que foi meio que ibutido no webdriver_manager
-from selenium.webdriver.chrome.service import Service
+  #será importado o webdriver_manager, qua atualizara os nossos webdrivers
+  from webdriver_manager.chrome import ChromeDriverManager
 
-#agora dentro do servico colocar a instalçaão do chrome	 sempre atualizada pelo sistema automatico
-service = Service(ChromeDriverManager().install())
+  #importar um serviço que foi meio que ibutido no webdriver_manager
+  from selenium.webdriver.chrome.service import Service
 
-# vou falar que navegador é o chromedriver vindo do webdriver_manager, continua utilizando em todo código
-navegador = webdriver.Chrome(service=service)
+  #agora dentro do servico colocar a instalçaão do chrome	 sempre atualizada pelo sistema automatico
+  service = Service(ChromeDriverManager().install())
 
-url = '' #url do site, here adress of site exemplo('https://www.github.com')
-navegador.get(url) #abre o site, open site
+  # vou falar que navegador é o chromedriver vindo do webdriver_manager, continua utilizando em todo código
+  navegador = webdriver.Chrome(service=service)
+  
+  url = '' #url do site, here adress of site exemplo('https://www.github.com')
+
+  navegador.get(url) #abre o site, open site
+  
+  tempo.sleep(1) #pausa de 1 segundo ate close no app
+
+baseSelenium() #chamando a função, também pode sr chamada dentro de um código principal
