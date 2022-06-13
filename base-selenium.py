@@ -3,7 +3,7 @@
 # for install lib, with command line: pip install selenium; pip install webdriver_manager
 # para instalar o selenium e webdriver_manager use o comando: pip install selenium; pip install selenium webdriver_manager
 #
-# my user https://github.com/leandro-falcao   date(11/06/2022)
+# my user https://github.com/leandro-falcao   date: BRa(11/06/2022) or EN (6/11/2022)
 #report: https://github.com/leandro-falcao/base-selenium
 #
 #
